@@ -1,0 +1,47 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components{
+    .boton{
+       @apply transition-all cursor-pointer rounded-lg p-3 uppercase text-lg font-bold w-full
+    }
+
+    .parrafo{
+        @apply my-2
+    }
+
+    .criptoIMG{
+        @apply sm:w-[20%] w-[10em] 
+    }
+
+    
+    .principal{
+        @apply sm:flex grid justify-items-center h-screen justify-center w-screen sm:justify-between md:justify-around
+    }
+    .criptoInfo{
+        @apply sm:flex sm:flex-wrap m-6 grid mt-4 mb-10 items-center justify-items-center sm:justify-evenly
+    }
+    .mitadIzquierda{
+        @apply sm:w-2/6 w-[14em] mt-10 grid content-center
+    }
+    .mitadDerecha{
+        @apply sm:w-1/2 grid content-start justify-items-center
+    }
+    .titulo{
+        @apply capitalize text-white font-bold text-2xl mx-auto text-center mt-20 w-2/3 
+    }
+
+
+    .cursor {
+        animation: blink 1s infinite;
+      }
+      
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+
+}
+
